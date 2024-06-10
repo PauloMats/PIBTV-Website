@@ -10,10 +10,10 @@ const App: React.FC = () => {
         <div className="App">
             <Header />
             <Navbar />
-            <Section title="Home" content="Welcome to my website!" />
-            <Section title="About" content="About us page content here." />
-            <Section title="Services" content="Details about our services." />
-            <Section title="Contact" content="Contact us page content here." />
+            <Section title="Home" content="Bem Vindo ao site da PIBTV!" />
+            <Section title="About" content="Saiba mais aqui, em breve." />
+            <Section title="Services" content="Mais detalhes aqui em breve" />
+            <Section title="Contact" content="Entre em contato connosco" />
             <Footer />
         </div>
     );
