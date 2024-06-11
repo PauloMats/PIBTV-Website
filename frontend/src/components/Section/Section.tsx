@@ -1,16 +1,15 @@
 import React from 'react';
-import './Section.css';
 
 interface SectionProps {
     title: string;
-    content: string;
+    content: React.ReactNode;
 }
 
 const Section: React.FC<SectionProps> = ({ title, content }) => {
     return (
-        <section className="section">
+        <section>
             <h2>{title}</h2>
-            <p>{content}</p>
+            <div>{content}</div>
         </section>
     );
 };
