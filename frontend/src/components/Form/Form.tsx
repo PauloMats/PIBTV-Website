@@ -45,7 +45,7 @@ const Form: React.FC = () => {
             if (error instanceof Error) {
                 alert('Erro ao cadastrar dados: ' + error.message);
             } else {
-                alert('Erro ao cadastrar dados');
+                alert('Erro ao cadastrar dados: ' + JSON.stringify(error));
             }
         }
     };

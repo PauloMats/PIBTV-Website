@@ -14,6 +14,7 @@ router.post('/pessoas', async (req, res) => {
         );
         res.status(201).json({ id: result.insertId });
     } catch (error: unknown) {
+        console.error('Erro ao inserir dados:', error);  // Adicione este log
         if (error instanceof Error) {
             res.status(500).json({ error: error.message });
         } else {
@@ -28,6 +29,7 @@ router.get('/pessoas', async (req, res) => {
         const [rows] = await pool.query('SELECT * FROM pessoas');
         res.status(200).json(rows);
     } catch (error: unknown) {
+        console.error('Erro ao recuperar dados:', error);  // Adicione este log
         if (error instanceof Error) {
             res.status(500).json({ error: error.message });
         } else {
